@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="sytlesheet" href="style.css" />
+
+    <style>
+      img {
+        display: None;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="container"></div>
+    <div class="container" id="picker">
+      <button type="button" class="btn btn-primary" onclick="gradient()">
+        Gradient
+      </button>
+      <button type="button" class="btn btn-primary" onclick="randomPattern()">
+        Random Color
+      </button>
+      <button type="button" class="btn btn-primary" onclick="setRandom()">
+        Random Color
+      </button>
+      <button type="button" class="btn btn-primary" onclick="setOver()">
+        Over
+      </button>
+      <!-- <button type="button" class="btn btn-primary" onclick="dImage()">
+        Draw Image
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="average_function()"
+      >
+        Draw Image
+      </button> -->
+      <img id="goomba" src="goomba.jpg" alt="goomba" />
+      <canvas
+        id="myCanvas"
+        width="300"
+        height="300"
+        style="border:1px solid #d3d3d3;"
+        onmouseover="feedback(event)"
+      >
+      </canvas>
+      <div id="temp"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="buttonhandle.js"></script>
+  </body>
+</html>
